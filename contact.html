@@ -3,17 +3,69 @@
     <head>
         <title>Contact</title>
     </head>
+    <style>
+        body {
+            text-align: center;
+            background-image: url("twitt.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .button1 {
+            background-color: #00C5BE;
+            border: none;
+            border-style: solid;
+            border-radius: 20px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 50px;
+            font-weight: normal;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+        .button2 {
+            background-color: #00C5BE;
+            border: none;
+            border-style: solid;
+            border-radius: 20px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px 50px;
+            font-weight: normal;
+            cursor: pointer;
+        }
+        h1 {
+            font-family: Georgia;
+            color: #122928;
+        }
+        a {
+            line-height: 100px;
+            margin-right: 20px;
+            font-size: 20px;
+        }
+        .name, .email{
+            line-height: 50px;
+        }
+        .resume {
+            font-size: 30px;
+            cursor: pointer;
+            color: blue;
+        }
+    </style>
+    <a class="resume" href="resume.html">Resume</a>
  <body>
-    <a href="resume.html"><--Back</a>
     <h1>Drop Message</h1>
     <form>
+    <label class="name" for="name">Name</label>
     <input type="text" placeholder="Enter name" name="Name"><br>
+    <label class="email" for="email">Email</label>
     <input type="email" placeholder="Enter email address" name="Email"><br>
     <textarea name="message" id="MGS" cols="30" rows="10">Your message here..</textarea><br>
-    <button>Submit</button>
-    <button>Reset</button><br>
+    <button class="button1">Submit</button>
+    <button class="button2">Reset</button><br>
     </form>
-    <a href="https://www.facebook.com/alfranciss/">Facebook</a>
-    <a href="https://github.com/Briz09">Github</a>
+    <a  href="https://www.facebook.com/alfranciss/">Facebook</a>
+    <a  href="https://github.com/Briz09">Github</a>
  </body>   
 </html>
