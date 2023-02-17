@@ -1,0 +1,72 @@
+<!DOCTYPE html
+<html>
+
+<head>
+
+<title>JavaScript</title>
+
+<script language="JavaScript" type="text/javascript">
+
+
+    function changeToGreen(){
+        document.getElementById("task1").style.color="green";
+    }
+
+    function checkAge(){
+        var Age = document.myForm.age.value;
+        alert(Age > 65);
+    }
+
+    function multiply(){
+        var num1 = document.calcu.num1.value;
+        var num2 = document.calcu.num2.value;
+        document.getElementById("output").innerHTML = num1 * num2;
+    }
+
+    function divide(){
+        var num1 = document.calcu.num1.value;
+        var num2 = document.calcu.num2.value;
+        document.getElementById("output").innerHTML = num1 / num2;
+    }
+
+    function add(){
+        var num1 = document.calcu.num1.value;
+        var num2 = document.calcu.num2.value;
+        document.getElementById("output").innerHTML = parseInt(num1) + parseInt(num2);
+    }
+
+    function subtract(){
+        var num1 = document.calcu.num1.value;
+        var num2 = document.calcu.num2.value;
+        document.getElementById("output").innerHTML = num1 - num2;
+    }
+</script>
+</head>
+
+<body>
+    <h1 id="task1">Task 1</h1>
+
+    <button onclick="changeToGreen()">Green</button>
+    <hr/>
+    <h1>Task 2</h1>
+    <form name="myForm">
+    <input type="number" name="age"/>
+    <input type= "button" value= "Check" onclick= "checkAge()"/>
+    </form>
+    <hr/>
+    <h1>Task 3</h1>
+    <form name="calcu">
+    <input type="number" name="num1">
+    <input type="number" name="num2">
+    <input type="button" value= "mutiply" onclick="multiply()" >
+    <input type="button" value= "divide" onclick= "divide()" >
+    <input type="button" value= "add" onclick= "add()">
+    <input type="button" value= "substract" onclick= "subtract()">
+    </form>
+
+    <h2>Output:</h2>
+
+    <p id="output"></p>
+
+</body>
+</html>
