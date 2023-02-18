@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="Formscript.js"></script>
+    <link rel="stylesheet" href="Formstyle.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <form>
+
+            <span id="elegible_warn"></span>
+            <div id="name-email">
+                <h1>Registration Form</h1>
+                <label for="first_name">First Name</label>
+                <input id="first_name" type="text">
+
+                <label for="last_name">Last Name</label>
+                <input id="last_name" type="text">
+
+                <label for="email">Email</label>
+                <input id="email" type="email">
+            </div>
+            <div id="password-confirm">
+                <div class="password_container">
+                    <label for="password">Password</label>
+                    <input id="password" type="password">
+                    <span id="password_warn"></span>
+            </div>
+            <div id="date_of_birth">
+                <label for="birthday">Date Of Birth</label>
+                <input type="date" id="birthday">
+                <span id="dob_warn"></span>
+            </div>
+
+            <label for="gender">Gender</label>
+            <div id="gender">
+                <div>
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female"name="gender">
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <input type="radio" id="other"name="gender">
+                    <label for="others">Other</label>
+                </div>
+            </div>
+            <div id="tel-address">
+                <label for="tel">Mobile</label>
+                <input type="tel" id="tel">
+                <label for="address">Address</label>
+                <textarea name="address" id="address" cols="20" rows="10"></textarea>
+            </div>
+            <div id="submit_group">
+                <input class="Ssubmit" type="button" onclick="verify_pass()" value="Submit">
+                <input class="Rreset" type="reset" onclick="reset()" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
